@@ -7,14 +7,12 @@ public class Hangman {
     final private String username;
 
     public Hangman(String username){
-        this.scannerInitiator = scannerInitiator;
         this.username = username;
     }
 
     private void playGame (){
         int numberOfPlaying = TimesYouWannaPlay.numOfPlayingTimes();
         System.out.println("\nLet's play!");
-        CreationOfGameProfile.createProfile(username);
         WordRandomizer wordRandomizer = new WordRandomizer();
         int playerScore = 0;
 
@@ -124,7 +122,6 @@ public class Hangman {
             quitTheGame();
         }
     }
-
 
 
     private String getchosenInstruction(){
